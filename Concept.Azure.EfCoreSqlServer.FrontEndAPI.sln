@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concept.Azure.EfCoreSqlServer.FrontEndAPI", "Concept.Azure.EfCoreSqlServer.FrontEndAPI\Concept.Azure.EfCoreSqlServer.FrontEndAPI.csproj", "{67171A73-FBBB-4B76-AA2C-A15799547CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concept.Azure.EfCoreSqlServer.DataAccess", "Concept.Azure.EfCoreSqlServer.DataAccess\Concept.Azure.EfCoreSqlServer.DataAccess.csproj", "{521B3155-3EED-4907-8379-8A69F0DAC334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67171A73-FBBB-4B76-AA2C-A15799547CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67171A73-FBBB-4B76-AA2C-A15799547CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67171A73-FBBB-4B76-AA2C-A15799547CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67171A73-FBBB-4B76-AA2C-A15799547CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521B3155-3EED-4907-8379-8A69F0DAC334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521B3155-3EED-4907-8379-8A69F0DAC334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521B3155-3EED-4907-8379-8A69F0DAC334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521B3155-3EED-4907-8379-8A69F0DAC334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD3AA045-870C-404D-83F1-3F0D9154A9CA}
+	EndGlobalSection
+EndGlobal
