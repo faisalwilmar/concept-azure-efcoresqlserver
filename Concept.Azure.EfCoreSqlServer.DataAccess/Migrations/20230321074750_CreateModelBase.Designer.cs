@@ -4,6 +4,7 @@ using Concept.Azure.EfCoreSqlServer.DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Concept.Azure.EfCoreSqlServer.DataAccess.Migrations
 {
     [DbContext(typeof(BisonDataContext))]
-    partial class BisonDataContextModelSnapshot : ModelSnapshot
+    [Migration("20230321074750_CreateModelBase")]
+    partial class CreateModelBase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

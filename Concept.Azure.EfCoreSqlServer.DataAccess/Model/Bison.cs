@@ -1,15 +1,11 @@
-﻿using System;
+﻿using Concept.Azure.EfCoreSqlServer.DataAccess.Model.Base;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Concept.Azure.EfCoreSqlServer.DataAccess.Model
 {
-    public class Bison
+    public class Bison : StringIdModelBase
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
-
         [MaxLength(50)]
         public string Name { get; set; }
 

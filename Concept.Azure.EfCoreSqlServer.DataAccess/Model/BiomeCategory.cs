@@ -1,15 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Concept.Azure.EfCoreSqlServer.DataAccess.Model.Base;
 
 namespace Concept.Azure.EfCoreSqlServer.DataAccess.Model
 {
-    public class BiomeCategory
+    public class BiomeCategory : StringIdModelBase
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
-
         public string BiomeName { get; set; }
     }
 }
