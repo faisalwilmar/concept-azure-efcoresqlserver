@@ -1,4 +1,4 @@
-using Concept.Azure.EfCoreSqlServer.DataAccess.Repository;
+using Concept.Azure.EfCoreSqlServer.DataAccess.DataContext;
 using Microsoft.EntityFrameworkCore;
 
 namespace Concept.Azure.EfCoreSqlServer.FrontEndAPI
@@ -10,8 +10,9 @@ namespace Concept.Azure.EfCoreSqlServer.FrontEndAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Entity Framework Initialization
-            builder.Services.AddDbContext<BisonDataContext>(options =>
-               options.UseSqlServer(builder.Configuration.GetConnectionString("BisonDataContext") ?? throw new InvalidOperationException("Connection string 'BisonDataContext' not found."),
+            // reference: https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
+            builder.Services.AddDbContext<SafariDataContext>(options =>
+               options.UseSqlServer(builder.Configuration.GetConnectionString("SafariDataContext") ?? throw new InvalidOperationException("Connection string 'SafariDataContext' not found."),
                x => x.MigrationsAssembly("Concept.Azure.EfCoreSqlServer.DataAccess"))); // Assembly of Data Context
 
             // Add services to the container.

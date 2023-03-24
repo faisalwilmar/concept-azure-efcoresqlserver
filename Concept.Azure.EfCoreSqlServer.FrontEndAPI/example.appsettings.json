@@ -7,6 +7,6 @@
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "BisonDataContext": "<ADO.NET Connection String>"
+    "SafariDataContext": "<ADO.NET Connection String>"
   }
 }

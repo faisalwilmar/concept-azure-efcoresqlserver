@@ -16,6 +16,12 @@ We are separating DbContext from Startup assembly. Reference can be read [here](
 
 If you want to add Migrations from already created database, reference can be read [here](https://website-development.ch/blog/ef-core-migrations-existing-database).
 
+Using DbContext with Dependency Injection, reference can be read [here](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/).
+
+Implementing Repository Pattern and Unit-of-Work Patten, reference can be read [here](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application).
+
+Entity Relationship can be read [here](https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key) and Relationship Changes can be read [here](https://learn.microsoft.com/en-us/ef/core/change-tracking/relationship-changes).
+
 ------
 
 ## How to Setup the Database?
@@ -48,3 +54,6 @@ Our first priority is to create DbContext and connect to the *real* database.
 9. If we want to update our database model, we can run `add-migration <migration_name>` again. The EF tools will automatically define which changes need to be made to the *real* database based on the snapshot.
 
 10. To update the *real* database, we can run `update-database` command. Make sure the connection string in appsettings.json is defined and Azure SQL Database's Firewall is opened for our IP Address.
+
+------
+

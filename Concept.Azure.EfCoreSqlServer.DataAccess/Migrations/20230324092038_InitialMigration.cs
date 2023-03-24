@@ -15,7 +15,11 @@ namespace Concept.Azure.EfCoreSqlServer.DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AggressionName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    AggressionName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -27,7 +31,11 @@ namespace Concept.Azure.EfCoreSqlServer.DataAccess.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    BiomeName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    BiomeName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -45,7 +53,11 @@ namespace Concept.Azure.EfCoreSqlServer.DataAccess.Migrations
                     Age = table.Column<int>(type: "int", nullable: false),
                     IsAlive = table.Column<bool>(type: "bit", nullable: false),
                     AggressionLevelId = table.Column<int>(type: "int", nullable: true),
-                    BiomeRefId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    BiomeRefId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

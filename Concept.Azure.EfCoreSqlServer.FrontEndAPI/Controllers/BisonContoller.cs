@@ -1,5 +1,5 @@
-﻿using Concept.Azure.EfCoreSqlServer.DataAccess.Model;
-using Concept.Azure.EfCoreSqlServer.DataAccess.Repository;
+﻿using Concept.Azure.EfCoreSqlServer.DataAccess.DataContext;
+using Concept.Azure.EfCoreSqlServer.DataAccess.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -11,9 +11,9 @@ namespace Concept.Azure.EfCoreSqlServer.FrontEndAPI.Controllers
     public class BisonController : ControllerBase
     {
         private readonly ILogger<BisonController> _logger;
-        private BisonDataContext db;
+        private readonly SafariDataContext db;
 
-        public BisonController(ILogger<BisonController> logger, BisonDataContext db)
+        public BisonController(ILogger<BisonController> logger, SafariDataContext db)
         {
             _logger = logger;
             this.db = db;

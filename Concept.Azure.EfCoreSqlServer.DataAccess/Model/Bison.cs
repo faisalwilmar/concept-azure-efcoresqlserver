@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Concept.Azure.EfCoreSqlServer.DataAccess.Model
 {
-    public class Bison : StringIdModelBase
+    public class Bison : GuidIdModelBase
     {
         [MaxLength(50)]
         public string Name { get; set; }

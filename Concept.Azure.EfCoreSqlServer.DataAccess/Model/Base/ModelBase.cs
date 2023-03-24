@@ -18,7 +18,7 @@ namespace Concept.Azure.EfCoreSqlServer.DataAccess.Model.Base
         public int Id { get; set; }
     }
 
-    public class StringIdModelBase : ModelBase
+    public class GuidIdModelBase : ModelBase
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

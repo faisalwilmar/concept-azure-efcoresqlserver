@@ -2,7 +2,7 @@
 
 namespace Concept.Azure.EfCoreSqlServer.DataAccess.Model
 {
-    public class BiomeCategory : StringIdModelBase
+    public class BiomeCategory : GuidIdModelBase
     {
         public string BiomeName { get; set; }
     }
